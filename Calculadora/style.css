@@ -1,0 +1,50 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.principal{
+    text-align: center;
+    width: 38%;
+    padding: 2%;
+    margin: auto;
+}
+
+.botao{
+    padding: 3%;
+    width: 18%;
+    font-size: large;
+    background-color: rgb(92, 15, 218);
+    color: white;
+    margin: 0.2%;
+    cursor: pointer;
+}
+
+.botao:hover{
+    opacity: 0.79;
+}
+
+.botao:active{
+   scale: 1.2;
+}
+
+.borda{
+    border: 1px solid black;
+    border-radius: 20%;
+}
+
+#visor{
+    background-color: black;
+    color: white;
+    width: 65%;
+    padding: 4%;
+    margin: 3%;
+    border: 1px solid;
+    border-radius: 20%;
+    color: rgb(92, 15, 218);
+    font-size: 22px;
+}

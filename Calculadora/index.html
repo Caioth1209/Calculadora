@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Calculadora Js</h1>
+    
+    <div class="principal">
+
+        <div id="vis">
+            <input type="text" disabled id="visor">
+        </div>
+
+        <div class="primeira">
+            <input type="button" value="AC" onclick="limpar()" class="botao borda">
+            <input type="button"  value="%" id="porcentagem" onclick="porcentagem()" class="botao borda">
+            <input type="button"  value="√" id="raiz" onclick="raiz()" class="botao borda">
+            <input type="button"  value="/" id="divisao" onclick="operacao('/')" class="botao borda">
+        </div>
+
+        <div class="segunda">
+            <input type="button"  value="7" onclick="numeroClicado('7')" class="botao borda"> 
+            <input type="button"  value="8" onclick="numeroClicado('8')" class="botao borda"> 
+            <input type="button"  value="9" onclick="numeroClicado('9')" class="botao borda"> 
+            <input type="button"  value="*" id="produto" onclick="operacao('*')"class="botao borda"> 
+        </div>
+
+        <div class="terceira">
+            <input type="button"  value="4" onclick="numeroClicado('4')"class="botao borda">
+            <input type="button"  value="5" onclick="numeroClicado('5')"class="botao borda">
+            <input type="button"  value="6" onclick="numeroClicado('6')"class="botao borda">
+            <input type="button"  value="-" id="subt" onclick="operacao('-')" class="botao borda">
+        </div>
+
+        <div class="quarta">
+            <input type="button"  value="1" onclick="numeroClicado('1')"class="botao borda"> 
+            <input type="button"  value="2" onclick="numeroClicado('2')"class="botao borda"> 
+            <input type="button"  value="3" onclick="numeroClicado('3')"class="botao borda">
+            <input type="button"  value="+" id="soma" onclick="operacao('+')"class="botao borda"> 
+        </div>
+
+
+        <div class="quinta">
+            <input type="button"  value="0" id="zero" onclick="numeroClicado('0')" class="botao borda"> 
+            <input type="button"  value="x!" id="fatorial" onclick="fatorial()" class="botao borda">
+            <input type="button"  value="." id="ponto" onclick="ponto()" class="botao borda">  
+            <input type="button" value="=" onclick="calcula()" class="botao borda">
+        </div>
+
+        <span id="resultados"> </span>
+    </div>
+    
+</body>
+
+<script src="js/main.js"></script>
+
+</html>
